@@ -1,0 +1,29 @@
+.wraper-btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+    & .btn-login {
+        background-color: rgb(77, 76, 76);
+        border: none;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    & .btn-forgot-password {
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
