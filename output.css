@@ -13,6 +13,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+body .wraper-login {
+  background-color: #1d1c1c;
+  padding: 20px 0px;
+}
+body .wraper-login .wraper-login-title {
+  display: flex;
+  justify-content: center;
+}
+body .wraper-login .wraper-login-title span {
+  color: white;
+  font-size: 1.5rem;
+}
 body .wraper-login .login-inputs {
   display: flex;
   flex-direction: column;
@@ -40,7 +52,7 @@ body .wraper-login .login-inputs .input-login {
   background: inherit;
 }
 .row:first-child {
-  padding: 40px 30px 0px 30px;
+  padding: 0px 30px 0px 30px;
 }
 .row:nth-child(2), .row:nth-child(8), .row:nth-child(10) {
   background: #134A46;
@@ -105,12 +117,12 @@ body .wraper-login .login-inputs .input-login {
   left: 5px;
   right: 5px;
   bottom: 6px;
-  background: red;
+  background: #474747;
 }
 .slide-up + label:after {
   top: 0;
   bottom: 0;
-  background: green;
+  background: #868585;
 }
 
 span:nth-child(1) .slide-up {

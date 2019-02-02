@@ -26,7 +26,7 @@
   text-align: center;
   
   &:first-child {
-    padding: 40px 30px 0px 30px;
+    padding: 0px 30px 0px 30px;
   }
   &:nth-child(2),
   &:nth-child(8),
@@ -99,12 +99,12 @@
       left: 5px;
       right: 5px;
       bottom: 6px;
-      background: red; // change this to #134A46
+      background:rgb(71, 71, 71); // change this to #134A46
     }
     &:after {
       top: 0;
       bottom: 0;
-      background: green;
+      background: rgb(134, 133, 133);
     }
   }
 }
