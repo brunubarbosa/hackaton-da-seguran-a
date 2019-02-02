@@ -4,7 +4,7 @@
   margin: 0px;
 }
 
-body {
+body.body-login {
   background-image: url("../front/images/login-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -13,23 +13,23 @@ body {
   align-items: center;
   justify-content: center;
 }
-body .wraper-login {
+body.body-login .wraper-login {
   background-color: #1d1c1c;
   padding: 20px 0px;
 }
-body .wraper-login .wraper-login-title {
+body.body-login .wraper-login .wraper-login-title {
   display: flex;
   justify-content: center;
 }
-body .wraper-login .wraper-login-title span {
+body.body-login .wraper-login .wraper-login-title span {
   color: white;
   font-size: 1.5rem;
 }
-body .wraper-login .login-inputs {
+body.body-login .wraper-login .login-inputs {
   display: flex;
   flex-direction: column;
 }
-body .wraper-login .login-inputs .input-login {
+body.body-login .wraper-login .login-inputs .input-login {
   margin-bottom: 10px;
 }
 
@@ -186,6 +186,16 @@ span:nth-child(3) .slide-up:active {
 }
 .wraper-btn-login .btn-forgot-password:hover {
   text-decoration: underline;
+}
+
+body.telaInicial {
+  background-image: url("../../front/images/background-home.jpg");
+  background-size: 100%, 100%;
+}
+body.telaInicial .header-tela-inicial {
+  height: 60px;
+  width: 100%;
+  background-color: black;
 }
 
 /*# sourceMappingURL=output.css.map */
