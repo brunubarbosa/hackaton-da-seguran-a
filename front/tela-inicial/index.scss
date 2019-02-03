@@ -39,6 +39,7 @@ body.telaInicial{
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    justify-content: space-around;
 
                     & .card-1, & .card-2, & .card-3 {
                         height: 90px;

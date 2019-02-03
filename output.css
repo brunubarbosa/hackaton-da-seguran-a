@@ -226,6 +226,7 @@ body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wra
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-1, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-2, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-3 {
   height: 90px;
@@ -290,13 +291,13 @@ body.novaOcorrencia section.conteudo-telaInicial .wraper-conteudo-tela-inicial .
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 body.novaOcorrencia section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-input-medidaProtetiva {
+  height: 35px;
   display: flex;
   justify-content: center;
 }
-body.novaOcorrencia .container {
+body.novaOcorrencia .containerr {
   /* form starting stylings ------------------------------- */
   /* LABEL ======================================= */
   /* active state */
@@ -306,11 +307,11 @@ body.novaOcorrencia .container {
   /* active state */
   /* ANIMATIONS ================ */
 }
-body.novaOcorrencia .container .group {
+body.novaOcorrencia .containerr .group {
   position: relative;
   margin: 0px 10px 30px 0px;
 }
-body.novaOcorrencia .container input {
+body.novaOcorrencia .containerr input {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -320,10 +321,10 @@ body.novaOcorrencia .container input {
   display: flex;
   justify-content: space-between;
 }
-body.novaOcorrencia .container input:focus {
+body.novaOcorrencia .containerr input:focus {
   outline: none;
 }
-body.novaOcorrencia .container label {
+body.novaOcorrencia .containerr label {
   color: #999;
   font-size: 18px;
   font-weight: normal;
@@ -335,17 +336,17 @@ body.novaOcorrencia .container label {
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-body.novaOcorrencia .container input:focus ~ label, body.novaOcorrencia .container input:valid ~ label {
+body.novaOcorrencia .containerr input:focus ~ label, body.novaOcorrencia .containerr input:valid ~ label {
   top: -20px;
   font-size: 14px;
   color: #5264AE;
 }
-body.novaOcorrencia .container .bar {
+body.novaOcorrencia .containerr .bar {
   position: relative;
   display: block;
   width: 300px;
 }
-body.novaOcorrencia .container .bar:before, body.novaOcorrencia .container .bar:after {
+body.novaOcorrencia .containerr .bar:before, body.novaOcorrencia .containerr .bar:after {
   content: "";
   height: 2px;
   width: 0;
@@ -356,16 +357,16 @@ body.novaOcorrencia .container .bar:before, body.novaOcorrencia .container .bar:
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-body.novaOcorrencia .container .bar:before {
+body.novaOcorrencia .containerr .bar:before {
   left: 50%;
 }
-body.novaOcorrencia .container .bar:after {
+body.novaOcorrencia .containerr .bar:after {
   right: 50%;
 }
-body.novaOcorrencia .container input:focus ~ .bar:before, body.novaOcorrencia .container input:focus ~ .bar:after {
+body.novaOcorrencia .containerr input:focus ~ .bar:before, body.novaOcorrencia .containerr input:focus ~ .bar:after {
   width: 50%;
 }
-body.novaOcorrencia .container .highlight {
+body.novaOcorrencia .containerr .highlight {
   position: absolute;
   height: 60%;
   width: 100px;
@@ -374,7 +375,7 @@ body.novaOcorrencia .container .highlight {
   pointer-events: none;
   opacity: 0.5;
 }
-body.novaOcorrencia .container input:focus ~ .highlight {
+body.novaOcorrencia .containerr input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
@@ -406,15 +407,80 @@ body.novaOcorrencia .container input:focus ~ .highlight {
     background: transparent;
   }
 }
-body.novaOcorrencia .container {
+body.novaOcorrencia .containerr {
   display: flex;
 }
-body.novaOcorrencia .container.group.fisrt {
+body.novaOcorrencia .containerr.group.fisrt {
   margin-right: 10px;
+}
+body.novaOcorrencia .wraper-submitCadastro {
+  display: flex;
+  justify-content: center;
+}
+body.novaOcorrencia .wraper-submitCadastro #submitCadastroOcorrencia {
+  height: 50px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background-color: #424040;
+  color: white;
+}
+body.novaOcorrencia .wraper-submitCadastro #submitCadastroOcorrencia:hover {
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 14px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 
 .radio {
-  margin: 0.5rem;
+  margin: -5px;
 }
 .radio input[type=radio] {
   position: absolute;
