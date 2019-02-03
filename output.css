@@ -519,4 +519,67 @@ body.novaOcorrencia .wraper-submitCadastro #submitCadastroOcorrencia:hover {
   margin-right: 0;
 }
 
+body.telaDashboard {
+  background-image: url("../../front/images/background-home.jpg");
+  background-size: 100vh, 100vw;
+}
+body.telaDashboard .header-tela-inicial {
+  height: 60px;
+  width: 100%;
+  background-color: #333333;
+}
+body.telaDashboard section.conteudo-telaDashboard {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial {
+  width: 800px;
+  height: 500px;
+  background-color: #dad5d5;
+  border-radius: 10px;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 89px;
+  left: 325px;
+  width: 700px;
+  height: 530px;
+  border: 3px solid #333131;
+  z-index: -1;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-title span {
+  font-size: 1.8rem;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-graficos {
+  width: 90%;
+  height: 100%;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-graficos .semi {
+  display: flex;
+  height: 45%;
+  width: 100%;
+}
+body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-graficos .primeiro, body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-graficos .segundo, body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-graficos .terceiro, body.telaDashboard section.conteudo-telaDashboard .wraper-conteudo-tela-inicial .wraper-inside-gray .wraper-graficos .quarto {
+  width: 49%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=output.css.map */
