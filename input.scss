@@ -1,6 +1,12 @@
-* {
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+  }
+  
+  * {
 padding: 0px;
 margin: 0px;
+font-family: 'Source Sans Pro', sans-serif;
 }
 @import 'front/index';
 @import 'front/input-login';
