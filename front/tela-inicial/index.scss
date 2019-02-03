@@ -70,4 +70,47 @@ body.telaInicial{
                 }
         }
     }
+
+    & .wraper-modal {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.459);
+        justify-content: center;
+        align-items: center;
+        & .modal {
+            padding: 30px;
+            background-color: white;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgb(71, 71, 71);
+
+            & .icon {
+                width: 100px;
+            }
+
+            & .modal-texts {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & .text-title {
+                    font-size: 1.8rem;
+                    display: block;
+                    color: rgb(73, 73, 73);
+                    font-weight: bold;
+                }
+    
+                & .text {
+                    margin-top: 10px;
+                    text-align: center;
+                    max-width: 80%;
+                    color: rgb(75, 74, 74);
+                }
+            }
+        }
+    }
 }

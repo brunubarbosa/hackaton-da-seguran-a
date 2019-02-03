@@ -15,6 +15,20 @@
     <title>Tela inicial</title>
 </head>
 <body class="telaInicial">
+        <div class="wraper-modal">
+        <div class="modal">
+            <div style="position: relative; right: 0px;">
+                <div style="position: absolute; right: -491px; top: -23px; cursor: pointer;" id="js-closeModal">
+                    <img style="width: 35px;" src="../images/close.svg" alt="">
+                </div>
+            </div>
+            <img class="icon" src="../images/success.svg" alt="">
+            <div class="modal-texts">
+                <span class="text-title">SUCESSO</span>
+                <span class="text">Seu chamado foi encaminhado para as viaturas</span>
+            </div>
+        </div>
+            </div>
     <header class="header-tela-inicial">
 
     </header>
@@ -41,7 +55,15 @@
             </div>
         </div>
     </section>
+    
 <script>
+        var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    if(vars['modal']){
+        $('.wraper-modal').css('display', 'flex')
+    }
         $('#js--card-1').on('click', () => {console.log('teste')
             window.location = "nova-ocorrencia/";
         })
@@ -53,6 +75,11 @@
         $('#js--card-3').on('click', () => {
             window.location = "analisar-dados/";
         })
+
+        $('#js-closeModal').on('click', () => {
+            $('.wraper-modal').css('display', 'none')
+        })
+
 </script>
 </body>
 </html>

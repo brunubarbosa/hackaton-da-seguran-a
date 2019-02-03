@@ -20,8 +20,10 @@
 </head>
 
 <body class="telaDashboard">
-    <header class="header-tela-inicial">
-
+    <header class="header-tela-inicial" style="display: flex; align-items: center;">
+        <div style="cursor: pointer;">
+            <img id="btn-back" style="margin-left: 10px; width: 30px; height: 30px;" src="../../images/back.svg" alt="">
+        </div>
     </header>
 
     <section class="conteudo-telaDashboard">
@@ -166,7 +168,10 @@
         })
 
         $('#js--card-3').on('click', () => {
-            window.location = "analisar-dados/";
+            ;
+        })
+        $('#btn-back').on('click', () => {
+            window.location = "/front/tela-inicial/index.html?"
         })
     </script>
 </body>
