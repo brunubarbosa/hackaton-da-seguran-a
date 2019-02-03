@@ -190,12 +190,66 @@ span:nth-child(3) .slide-up:active {
 
 body.telaInicial {
   background-image: url("../../front/images/background-home.jpg");
-  background-size: 100%, 100%;
+  background-size: 100vh, 100vw;
 }
 body.telaInicial .header-tela-inicial {
   height: 60px;
   width: 100%;
-  background-color: black;
+  background-color: #333333;
+}
+body.telaInicial section.conteudo-telaInicial {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial {
+  width: 800px;
+  height: 500px;
+  background-color: #dad5d5;
+  border-radius: 10px;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  top: 89px;
+  left: 325px;
+  width: 700px;
+  height: 530px;
+  border: 3px solid #333131;
+  z-index: -1;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-1, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-2, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-3 {
+  height: 90px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  border-radius: 5px;
+  background-color: #424040;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-1:hover, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-2:hover, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-3:hover {
+  box-shadow: 0px 1px 6px #838383;
+  background-color: #5c5b5b;
+  cursor: pointer;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-1 .card-image, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-2 .card-image, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-3 .card-image {
+  width: 40px;
+  height: 40px;
+}
+body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-1 span, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-2 span, body.telaInicial section.conteudo-telaInicial .wraper-conteudo-tela-inicial .wraper-inside-gray .card-3 span {
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
 }
 
 /*# sourceMappingURL=output.css.map */

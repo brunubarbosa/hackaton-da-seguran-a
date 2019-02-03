@@ -7,6 +7,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"></script>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="index.js"></script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +19,40 @@
 
     </header>
 
-    <section>
-        
-    </section>
+    <section class="conteudo-telaInicial">
+        <div class="wraper-conteudo-tela-inicial">
+            <div class="wraper-inside-gray">
+                <div class="card-1" id="js--card-1">
+                    <img class="card-image" src="../../front/images/create-icon.png" alt="">
+                    <span>NOVA OCORRÊNCIA</span>
+                </div>
+                
+                <div class="card-2" id="js--card-2">
+                    <img class="card-image" class="card-image" src="../../front/images/searcher.png" alt="">
+                    <span>PROCURAR OCORRÊNCIA</span>
+                    
+                </div>
+                
+                <div class="card-3" id="js--card-3">
+                    <img class="card-image" src="../../front/images/line-chart.png" alt="">
+                    <span>ANALISAR DADOS</span>
 
+                </div>
+            </div>
+        </div>
+    </section>
+<script>
+        $('#js--card-1').on('click', () => {console.log('teste')
+            window.location = "nova-ocorrencia/";
+        })
+
+        $('#js--card-2').on('click', () => {console.log('teste')
+            window.location = "procurar-ocorrencia/";
+        })
+
+        $('#js--card-3').on('click', () => {
+            window.location = "analisar-dados/";
+        })
+</script>
 </body>
 </html>
