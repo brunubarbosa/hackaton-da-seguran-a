@@ -41,12 +41,6 @@
                     <span>NOVA OCORRÊNCIA</span>
                 </div>
                 
-                <div class="card-2" id="js--card-2">
-                    <img class="card-image" class="card-image" src="../../front/images/searcher.png" alt="">
-                    <span>PROCURAR OCORRÊNCIA</span>
-                    
-                </div>
-                
                 <div class="card-3" id="js--card-3">
                     <img class="card-image" src="../../front/images/line-chart.png" alt="">
                     <span>DASHBOARD</span>
@@ -61,7 +55,7 @@
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
         vars[key] = value;
     });
-    if(vars['modal']){
+    if(vars['modal'] || vars['tipoFluxo']){
         $('.wraper-modal').css('display', 'flex')
     }
         $('#js--card-1').on('click', () => {console.log('teste')
