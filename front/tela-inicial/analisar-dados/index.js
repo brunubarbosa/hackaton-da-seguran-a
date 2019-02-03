@@ -7,7 +7,7 @@ $( document ).ready(function() {
   var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-          labels: ["Maria da Penha", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          labels: ["Maria da Penha", "Blue", "Pertubação", "Green", "Purple", "Depredação"],
           datasets: [{
               label: 'Percentual segmentado por bairro',
               data: [12, 19, 3, 5, 2, 3],
@@ -151,7 +151,7 @@ $( document ).ready(function() {
   new Chart(document.getElementById("mixed-chart"), {
       type: 'bar',
       data: {
-        labels: ["1900", "1950", "1999", "2050"],
+        labels: ["23", "5", "59", "37"],
         datasets: [{
             label: "Mogi",
             type: "line",
