@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <link rel="stylesheet" href="../../output.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="index.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tela inicial</title>
+</head>
+<body class="telaInicial">
+        <div class="wraper-modal">
+        <div class="modal">
+            <div style="position: relative; right: 0px;">
+                <div style="position: absolute; right: -491px; top: -23px; cursor: pointer;" id="js-closeModal">
+                    <img style="width: 35px;" src="../images/close.svg" alt="">
+                </div>
+            </div>
+            <img class="icon" src="../images/success.svg" alt="">
+            <div class="modal-texts">
+                <span class="text-title">SUCESSO</span>
+                <span class="text">Seu chamado foi encaminhado para as viaturas</span>
+            </div>
+        </div>
+            </div>
+    <header class="header-tela-inicial">
+
+    </header>
+
+    <section class="conteudo-telaInicial">
+        <div class="wraper-conteudo-tela-inicial">
+            <div class="wraper-inside-gray">
+                <div class="card-1" id="js--card-1">
+                    <img class="card-image" src="../../front/images/create-icon.png" alt="">
+                    <span>NOVA OCORRÊNCIA</span>
+                </div>
+                
+                <div class="card-3" id="js--card-3">
+                    <img class="card-image" src="../../front/images/line-chart.png" alt="">
+                    <span>DASHBOARD</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<script>
+        var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    if(vars['modal'] || vars['tipoFluxo']){
+        $('.wraper-modal').css('display', 'flex')
+    }
+        $('#js--card-1').on('click', () => {console.log('teste')
+            window.location = "nova-ocorrencia/";
+        })
+
+        $('#js--card-2').on('click', () => {console.log('teste')
+            window.location = "procurar-ocorrencia/";
+        })
+
+        $('#js--card-3').on('click', () => {
+            window.location = "analisar-dados/";
+        })
+
+        $('#js-closeModal').on('click', () => {
+            $('.wraper-modal').css('display', 'none')
+        })
+
+</script>
+</body>
+</html>

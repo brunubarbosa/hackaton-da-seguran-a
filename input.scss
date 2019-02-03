@@ -1,0 +1,17 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+  }
+  
+  * {
+padding: 0px;
+margin: 0px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+@import 'front/index';
+@import 'front/input-login';
+@import 'front/btn-login';
+@import 'front/tela-inicial/index';
+@import 'front/tela-inicial/nova-ocorrencia/nova-ocorrencia.scss';
+@import 'front/input-radio.scss';
+@import 'front/tela-inicial/analisar-dados/index.scss';

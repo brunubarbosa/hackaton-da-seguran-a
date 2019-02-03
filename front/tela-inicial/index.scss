@@ -1,0 +1,116 @@
+body.telaInicial{
+    background-image: url('../../front/images/background-home.jpg');
+    background-size: 100vh, 100vw;
+
+    & .header-tela-inicial {
+        height: 60px;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+    }
+
+    & section.conteudo-telaInicial {
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        & .wraper-conteudo-tela-inicial {
+            width: 800px;
+            height: 500px;
+            background-color: rgb(218, 213, 213);
+            border-radius: 10px;
+
+                &::after {
+                    content: ' ';
+                    display: inline-block;
+                    position: absolute;
+                    top: 89px;
+                    left: 325px;
+                    width: 700px;
+                    height: 530px;
+                    border: 3px solid rgb(51, 49, 49);
+                    z-index: -1;
+                    
+                }
+
+                & .wraper-inside-gray {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    & .card-1, & .card-2, & .card-3 {
+                        height: 90px;
+                        width: 180px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0px 5px;
+                        border-radius: 5px;
+                        background-color: rgb(66, 64, 64);
+
+                        &:hover {
+                            box-shadow: 0px 1px 6px rgb(131, 131, 131);
+                            background-color: rgb(92, 91, 91);
+                            cursor: pointer;
+                        }
+
+                        & .card-image {
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        & span {
+                            text-align: center;
+                            font-size: 1.1rem;
+                            color: white;
+                        }
+                    }
+                }
+        }
+    }
+
+    & .wraper-modal {
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.459);
+        justify-content: center;
+        align-items: center;
+        & .modal {
+            padding: 30px;
+            background-color: white;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgb(71, 71, 71);
+
+            & .icon {
+                width: 100px;
+            }
+
+            & .modal-texts {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                & .text-title {
+                    font-size: 1.8rem;
+                    display: block;
+                    color: rgb(73, 73, 73);
+                    font-weight: bold;
+                }
+    
+                & .text {
+                    margin-top: 10px;
+                    text-align: center;
+                    max-width: 80%;
+                    color: rgb(75, 74, 74);
+                }
+            }
+        }
+    }
+}

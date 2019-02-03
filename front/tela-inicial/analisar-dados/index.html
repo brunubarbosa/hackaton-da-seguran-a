@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../../../output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="index.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tela inicial</title>
+</head>
+
+<body class="telaDashboard">
+    <header class="header-tela-inicial" style="display: flex; align-items: center;">
+        <div style="cursor: pointer;">
+            <img id="btn-back" style="margin-left: 10px; width: 30px; height: 30px;" src="../../images/back.svg" alt="">
+        </div>
+    </header>
+
+    <section class="conteudo-telaDashboard">
+        <div class="wraper-conteudo-tela-inicial">
+            <div class="wraper-inside-gray">
+                <div class="wraper-title">
+                    <span>Dashboard</span>
+                </div>
+                <div class="wraper-graficos">
+                    <div class="semi">
+
+                        <div class="primeiro">
+                                <canvas id="myChart" width="200" height="200"></canvas>
+                        </div>
+                        <div class="segundo">
+                                <canvas id="doughnut-chart" width="500" height="450"></canvas>
+                        </div>
+                    </div>
+                    <div class="semi">
+                        <div class="terceiro">
+                                
+                        </div>
+                        <div class="quarto">
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="conteudo-telaDashboard">
+            <div class="wraper-conteudo-tela-inicial">
+                <div class="wraper-inside-gray">
+                    <div class="wraper-title">
+                        <span>Dashboard</span>
+                    </div>
+                    <div class="wraper-graficos">
+                        <div class="semi">
+    
+                            <div class="primeiro">
+                                    <canvas id="myChart2-1" width="200" height="200"></canvas>
+                            </div>
+                            <div class="segundo">
+                                    <canvas id="pie-chart" width="500" height="450"></canvas>
+                                    
+                            </div>
+                        </div>
+                        <div class="semi">
+                            <div class="terceiro">
+                                    
+                            </div>
+                            <div class="quarto">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="conteudo-telaDashboard">
+                <div class="wraper-conteudo-tela-inicial">
+                    <div class="wraper-inside-gray">
+                        <div class="wraper-title">
+                            <span>Dashboard</span>
+                        </div>
+                        <div class="wraper-graficos">
+                            <div class="semi">
+        
+                                <div class="primeiro">
+                                        <canvas id="mixed-chart" width="500" height="450"></canvas>
+                                </div>
+                                <div class="segundo">
+                                        <canvas id="copia2" width="500" height="450"></canvas>
+                                        
+                                </div>
+                            </div>
+                            <div class="semi">
+                                <div class="terceiro">
+                                        
+                                </div>
+                                <div class="quarto">
+                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="conteudo-telaDashboard">
+                    <div class="wraper-conteudo-tela-inicial">
+                        <div class="wraper-inside-gray">
+                            <div class="wraper-title">
+                                <span>Dashboard</span>
+                            </div>
+                            <div class="wraper-graficos">
+                                <div class="semi">
+            
+                                    <div class="primeiro">
+                                            <canvas id="copia1" width="200" height="200"></canvas>
+                                    </div>
+                                    <div class="segundo">
+                                            
+                                            <canvas id="line-chart" width="450" height="450"></canvas>
+                                    </div>
+                                </div>
+                                <div class="semi">
+                                    <div class="terceiro">
+                                            
+                                    </div>
+                                    <div class="quarto">
+                                            
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+    <script>
+        $('#js--card-1').on('click', () => {
+            console.log('teste')
+            window.location = "nova-ocorrencia/";
+        })
+
+        $('#js--card-2').on('click', () => {
+            console.log('teste')
+            window.location = "procurar-ocorrencia/";
+        })
+
+        $('#js--card-3').on('click', () => {
+            ;
+        })
+        $('#btn-back').on('click', () => {
+            window.location = "/front/tela-inicial/index.html?"
+        })
+    </script>
+</body>
+<script>
+        
+
+        </script>
+</html>

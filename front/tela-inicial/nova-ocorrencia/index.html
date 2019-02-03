@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../../output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="index.js"></script>
+
+
+    <meta charset="UTF-8">
+    <meta Ponto de fererência="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body class="novaOcorrencia">
+    <header class="header-tela-inicial">
+
+    </header>
+    <form action="../index.html?teste">
+
+
+        <section class="conteudo-telaInicial">
+            <div class="wraper-conteudo-tela-inicial">
+                <div class="wraper-inside-gray">
+                    <div class="wraper-input-medidaProtetiva">
+                        <div class="radio">
+                            <input checked id="radio-1" name="tipoFluxo" type="radio" checked>
+                            <label style="color: rgb(83, 83, 83); font-weight: bold; margin-right: 17px;" for="radio-1" class="radio-label">Fluxo normal</label>
+                        </div>
+
+                        <div class="radio">
+                            <input id="isMedidaProtetiva" name="tipoFluxo" type="radio">
+                            <label style="color: rgb(83, 83, 83); font-weight: bold;" for="isMedidaProtetiva" class="radio-label">Medida protetiva</label>
+                        </div>
+                    </div>
+                    <div id="js--wraper-tipo-fluxo" style="min-height: 300px;">
+                        <div id="wraper-maria-da-pena-inputs" style="display: none; justify-content: center;">
+                            <div>
+                                    <div style="display: flex; justify-content: center; margin-bottom: 25px;">
+                                            <select class="selectpicker" data-show-subtext="true" data-live-search="true" id="select-vitimas">
+                                                    <option>Selecione...</option>
+                                                    <option>Cristiane Alves da Silva</option>
+                                                    <option>Maria das Dores</option>
+                                                    <option>Larissa Santos Gonçalves</option>
+                                                    <option>Gabriela Cardoso Alves</option>
+                                                    <option>Elena Maria Conceição</option>
+                                                    <option>Silvia Rabelo da Costa</option>
+                                                    <option>Aparecida Matos</option>
+                                                    <option>Lívia Alessandra Aparecida Santos</option>
+                                                    <option>Ester Gabrielly da Rocha</option>
+                                                    <option>Gabriela Louise Lavínia Cardoso</option>
+                                                    <option>Marlene Raimunda da Cruz</option>
+                                                    <option>Jaqueline Vanessa Campos</option>
+                                                    <option>Ayla Nair Hadassa Assis</option>
+                                                    <option>Stefany Isadora da Luz</option>
+                                                    <option>Bianca Renata Antonella Barbosa</option>
+                                                    <option>Pietra Esther Isabelly de Paula</option>
+                                                    <option>Maria Gabrielly Analu Drumond</option>
+                                                    <option>Allana Benedita Isis Barros</option>
+                                                    <option>Josefa Luciana Maitê Porto</option>
+                                                    <option>Eduarda Fernanda Vitória da Mata</option>
+                                                    <option>Adriana Letícia Larissa da Rocha</option>
+                                                    <option>Emanuelly Josefa Isadora Freitas</option>
+                                                    <option>Alícia Emilly da Mata</option>
+                                                    <option>Sandra Mariane Rosa Rodrigues</option>
+                                                    <option>Marlene Aparecida Andreia Figueiredo</option>
+                                                    <option>Andreia Bárbara Fogaça</option>
+                                                    <option>Gabrielly Isabela Débora Brito</option>
+                                                    <option>Cristiane Yasmin Gomes</option>
+                                                    <option>Fátima Rafaela Tatiane Jesus</option>
+                                                    <option>Louise Antonella Almeida</option>
+                                                    <option>Alana Caroline Rocha</option>
+                                                    <option>Tânia Lívia Baptista</option>
+                                                    <option>Rita Heloise Olivia de Paula</option>
+                                                    <option>Sônia Sueli da Paz</option>
+                                                    <option>Carla Nicole Andreia Jesus</option>
+                                                    <option>Sabrina Agatha Beatriz Aragão</option>
+                                                    <option>Luiza Rosângela Pereira</option>
+                                                    <option>Marcela Julia Sebastiana Rodrigues</option>
+                                                    <option>Alice Jéssica Souza</option>
+                                                    <option>Antonella Helena Caldeira</option>
+                                                    <option>Luzia Letícia Stella Castro</option>
+                                                    <option>Renata Alice Pietra Almeida</option>
+                                                    <option>Lavínia Valentina Campos</option>
+                                                    <option>Natália Lorena Vieira</option>
+                                                    <option>Louise Bruna Barros</option>
+                                                    <option>Renata Jéssica Ferreira</option>
+                                                    <option>Maria Bianca Laís da Paz</option>
+                                                    <!-- <option data-subtext="Rep California" disabled="disabled">Marvin Martinez</option> -->
+                                                </select>
+                                    </div>
+            
+                                        <div id="conteudo-escondido-maria-penha" style="display: none;">
+                                                <div class="containerr">
+                                                        <div class="group fisrt">      
+                                                            <input disabled type="text" value="" id="nome-slicitante" >
+                                                            <span class="highlight"></span>
+                                                            <span class="bar"></span>
+                                                            <label class="label-input-text"></label>
+                                                        </div>
+                                                                
+                                                        <div class="group">      
+                                                            <input disabled id="rg-solicitante" type="text" value="53.365.586-54" >
+                                                            <span class="highlight"></span>
+                                                            <span class="bar"></span>
+                                                            <label class="label-input-text"></label>
+                                                        </div>
+                                                    
+                                                    </div>
+
+                                                    <div class="containerr">
+                                                            <div class="group fisrt">      
+                                                                <input id="endereco-solicitante" type="text" value="Rua Primeiro de Setembro 295" >
+                                                                <span class="highlight"></span>
+                                                                <span class="bar"></span>
+                                                                <label class="label-input-text">Endereço</label>
+                                                            </div>
+                                                                    
+                                                            <div class="group">      
+                                                                <input disabled id="telefone-solicitante" type="text" value="(11) 9 5343-4393" >
+                                                                <span class="highlight"></span>
+                                                                <span class="bar"></span>
+                                                                <label class="label-input-text"></label>
+                                                            </div>
+                                                        
+                                                        </div>
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div id="inputs-fluxo-normal" style="justify-content: center; flex-direction: column; align-items: center; display: flex;">
+
+                                <div class="containerr">
+                                        <div class="group fisrt">      
+                                            <input type="text" disabled value="Sael" >
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="label-input-text"></label>
+                                        </div>
+                                                
+                                        <div class="group">      
+                                            <input type="text" disabled value="001" >
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="label-input-text"></label>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="containerr">
+                                            <div class="group fisrt">      
+                                                <input type="text" disabled value="03/02/2019" >
+                                                <span class="highlight"></span>
+                                                <span class="bar"></span>
+                                                <label class="label-input-text"></label>
+                                            </div>
+                                                    
+                                            <div class="group">      
+                                                <input type="text" disabled value="19:23:49" >
+                                                <span class="highlight"></span>
+                                                <span class="bar"></span>
+                                                <label class="label-input-text"></label>
+                                            </div>
+                                        
+                                        </div>
+
+                            <div class="containerr">
+                                        <div class="group fisrt">      
+                                            <input type="text" >
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="label-input-text">Solicitante *</label>
+                                        </div>
+                                                
+                                        <div class="group">      
+                                            <input type="text" >
+                                            <span class="highlight"></span>
+                                            <span class="bar"></span>
+                                            <label class="label-input-text">RG</label>
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                    
+                                    <div class="containerr">
+                                        <div style="display: flex">
+                                    
+                                            <div class="group">      
+                                              <input type="text" >
+                                              <span class="highlight"></span>
+                                              <span class="bar"></span>
+                                              <label class="label-input-text">Bairro</label>
+                                            </div>
+                                              
+                                            <div class="group">      
+                                              <input type="text" >
+                                              <span class="highlight"></span>
+                                              <span class="bar"></span>
+                                              <label class="label-input-text">Telefone</label>
+                                            </div>
+                                        </div>
+                                          
+                                        </div>
+                                    
+                                        <div class="containerr">
+                                                <div style="display: flex">
+                                    
+                                                    <div class="group" style="margin-bottom: 10px">      
+                                                      <input type="text" >
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label-input-text">Ponto de fererência</label>
+                                                    </div>
+                                                      
+                                                    <div class="group" style="margin-bottom: 10px">      
+                                                      <input type="text" >
+                                                      <span class="highlight"></span>
+                                                      <span class="bar"></span>
+                                                      <label class="label-input-text">Email</label>
+                                                    </div>
+                                                </div>
+                                                  
+                                                </div>
+                                                
+                                                
+                                                
+                                            </div>
+                                                    <div class="wraper-submitCadastro">
+                                                        <button id="submitCadastroOcorrencia">Enviar</button>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </form>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+
+        function escondeDrop() {
+            document.getElementById('opcoesDrop').style.display = 'none';
+        }
+        function filterFunction() {
+            document.getElementById('opcoesDrop').style.display = 'block';
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+        $('#submitCadastroOcorrencia').on('click', () => {
+            window.location = "/front/tela-inicial/index.html?modal=true";
+        })
+    </script>
+</body>
+
+</html>
